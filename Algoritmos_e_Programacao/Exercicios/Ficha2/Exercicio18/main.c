@@ -40,8 +40,10 @@ int main(){
         printf("\nInsira um número real positivo: ");
         scanf("%lf", &num);
 
-        qtd_numeros++;
-        soma += num;
+        if (num >= 0){ //verifica se número é negativo
+            qtd_numeros++;
+            soma += num;
+        }
     }while (num >= 0);
     printf("\n\nA média dos %d números é %0.2Lf\n\n", qtd_numeros, (soma / qtd_numeros));
 
