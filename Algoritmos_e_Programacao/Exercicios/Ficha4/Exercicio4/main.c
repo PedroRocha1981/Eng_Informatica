@@ -120,6 +120,10 @@ int main(){
 	
 	printf("\nO vetor intercalado:");
 	apresentaVetor(vetor_final, n_elementos * 2, NORMAL);
+
+	free(vetor);
+	free(vetor2);
+	free(vetor_final);
 	
 	printf("\n");
 	return 0;
